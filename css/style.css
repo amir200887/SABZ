@@ -32,19 +32,8 @@ a {
 .fw_n {
     font-weight: 500;
 }
-button:focus{
-    outline: none !important;
-    border: none !important;
-}
-.dropdown:focus{
-    outline: none !important;
-    border: none !important;
-}
-button:not(:focus){
-    outline: none !important;
-    border: none !important;
-}
-.dropdown:not(:focus){
+
+a:focus {
     outline: none !important;
     border: none !important;
 }

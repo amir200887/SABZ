@@ -89,11 +89,11 @@
 
                     <div class="dropdown">
                         <hr class="mb-3">
-                        <button class="dropdown-toggle btn mb-3 d-flex align-items-center gap-2"
-                            data-bs-toggle="dropdown">
+                        <a class="dropdown-toggle mb-3 w-100 d-flex align-items-center gap-2" data-bs-toggle="dropdown"
+                            href="">
                             <img src="img/user.jpg" class=" rounded-5" width="30" height="30" alt="">
                             <span class="fw_b">امیرحسین عظیم پور </span>
-                        </button>
+                        </a>
                         <ul class="  dropdown-menu   shadow  ">
                             <li>
                                 <a href="" class="dropdown-item">پروژه جدید...</a>
@@ -137,21 +137,19 @@
                     <button id="cl" class="btn-close btn opacity-10" data-bs-dismiss="offcanvas">
                     </button>
 
-
-
-                    <div class=" container-fluid position-relative vh-100 w-100 d-flex flex-column gap-3 overflow-auto    shadow border border-0 show"
+                    <div class=" container-fluid position-relative p-3 vh-100 w-100 d-flex flex-column gap-3 overflow-auto    shadow border border-0 show"
                         data-bs-backdrop="false">
                         <div class="d-flex align-items-center p-3 pb-0 gap-1">
                             <a href=""><img src="img/logo.webp" width="70" height="45" alt=""></a>
-                            <a href="" class="fw_b fs-5 text-dark text-nowrap">سبز لرن</a>
+                            <a href="" class="fw_b fs-5  text-nowrap" data-bs-theme="light">سبز لرن</a>
 
 
 
 
                         </div>
-                        <hr class="mx-3">
-                        <div>
-                            <ul class="list-group border border-0 p-3 pt-2 gap-2   rounded">
+                        <hr>
+                        <div class="mb-auto">
+                            <ul class="list-group border border-0  pt-2 gap-2   rounded">
                                 <li class="list-group-item active border-0 d-flex gap-2 rounded">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-house-door" viewBox="0 0 16 16">
@@ -212,13 +210,13 @@
                         </div>
 
 
-                        <div class="dropdown mt-auto">
-                            <hr class="mx-3 mb-2">
-                            <button class="dropdown-toggle btn mb-3 d-flex align-items-center gap-2"
-                                data-bs-toggle="dropdown">
+                        <div class="dropdown">
+                            <hr class="mb-3">
+                            <a class="dropdown-toggle   w-100 mb-3 d-flex align-items-center gap-2"
+                                data-bs-toggle="dropdown" href="">
                                 <img src="img/user.jpg" class=" rounded-5" width="30" height="30" alt="">
-                                <span class="fw_b">امیرحسین عظیم پور</span>
-                            </button>
+                                <span class="fw_b">امیرحسین عظیم پور </span>
+                            </a>
                             <ul class="  dropdown-menu   shadow  ">
                                 <li>
                                     <a href="" class="dropdown-item">پروژه جدید...</a>
@@ -229,7 +227,9 @@
                                 <li class="pb-3">
                                     <a href="" class="dropdown-item">پروفایل</a>
                                 </li>
+
                                 <hr>
+
 
                                 <li class="pb-0">
                                     <a href="" class="dropdown-item">خروج</a>
@@ -244,6 +244,9 @@
 
 
                     </div>
+
+
+
 
                 </div>
             </nav>
@@ -594,7 +597,7 @@
                     novalidate>
                     <h4 class="fw_b px-2">اطلاعات کاربر</h4>
                     <div class="row row-gap-5 mt-4">
-                        <div class="col-6 ">
+                        <div class="col-12 col-sm-6">
                             <label for="name" class=" form-label mb-2">نام</label>
 
                             <input type="text" class="form-control " placeholder="امیرحسین" name="" id="name" required>
@@ -608,7 +611,7 @@
 
                         </div>
 
-                        <div class="col-6 ">
+                        <div class="col-12 col-sm-6">
                             <label for="name2" class=" form-label mb-2">نام خانوادگی</label>
 
                             <input type="text" class="form-control " placeholder="عظیم پور" name="" id="name2" required>
@@ -622,7 +625,7 @@
                         </div>
 
 
-                        <div class="col-6 ">
+                        <div class="col-12 col-sm-6">
                             <label for="name3" class=" form-label mb-2">ایمیل</label>
 
                             <input type="email" class="form-control " placeholder="amirhossein@gmail.com" name=""
@@ -635,7 +638,7 @@
                             </div>
 
                         </div>
-                        <div class="col-6 ">
+                        <div class="col-12 col-sm-6">
                             <label for="name4" class=" form-label mb-2">شغل</label>
 
                             <select name="" class="form-select" id="" required>
@@ -653,10 +656,10 @@
                             </div>
 
                         </div>
-                        <div class="col-6 ">
+                        <div class="col-12 col-sm-6">
                             <label for="name5" class=" form-label mb-2">تصویر</label>
-                            <span class="p-1  text-warning fw_b m-2">با فرمت PNG یا JPG یا JPEG یا GIF</span>
                             <input type="file" class="form-control " name="" id="name5" required accept="image/*">
+
                             <div class="valid-feedback  mt-2  fs-6 fw_b">
                                 صحیح است
                             </div>
@@ -665,7 +668,7 @@
                             </div>
 
                         </div>
-                        <div class="col-6 ">
+                        <div class="col-12 col-sm-6">
                             <label for="name6" class=" form-label mb-2">سن</label>
 
                             <input type="number" min="18" max="100" class="form-control " name="" id="name6" required>
@@ -683,7 +686,7 @@
 
 
                     <button type="reset" class="btn btn-primary ms-2 mt-4 mb-2" id="btn">ارسال</button>
-                    <div class="toast   position-fixed end-0 top-0 bg-opacity-100 text-nowrap bg-warning " id="toast">
+                    <div class="toast p-0   position-fixed end-0 top-0  text-nowrap bg-warning " id="toast">
                         <div class="toast-header p-0 border-0  bg-warning ">
                             <button class="btn-close" data-bs-dismiss="toast"></button>
 
@@ -693,13 +696,13 @@
 
 
                         </div>
-                        <div class="toast-body bg-warning ">
+                        <div class="toast-body bg-warning p-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
                                 class="bi bi-check-lg text-success" viewBox="0 0 16 16">
                                 <path
                                     d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
                             </svg>
-                            <strong class="fs-5 fw_b  text-nowrap">اطلاعت با موفقیت ذخیره شد</strong>
+                            <strong class="fs-4 fw_b  text-nowrap">اطلاعت با موفقیت ذخیره شد</strong>
                         </div>
                     </div>
 
